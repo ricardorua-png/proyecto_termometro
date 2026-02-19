@@ -6,7 +6,7 @@ const { db } = require("../database");
 router.post("/", async (req, res) => {
   const hoy = new Date();
 
-  if (hoy.getDay() !== 3) {
+  if (hoy.getDay() !== 4) {
     return res.status(400).json({ mensaje: "Solo se permiten registros los sábados" });
   }
 
